@@ -35,7 +35,7 @@ public class MovePowerUp : MonoBehaviour
             if (powerUp.transform.position == randomPos)
             {
                 yield return new WaitForSeconds(Random.Range(1, 5));
-                randomPos = new Vector3(Random.Range(curPos.x - 500.0f, curPos.x + 500.0f), Random.Range(curPos.y - 500.0f, curPos.y + 500.0f), Random.Range(curPos.z - 500.0f, curPos.z + 500.0f));
+                randomPos = new Vector3(Random.Range(curPos.x - 100.0f, curPos.x + 100.0f), Random.Range(curPos.y - 100.0f, curPos.y + 100.0f), Random.Range(curPos.z - 100.0f, curPos.z + 100.0f));
             }
             yield return null;
         }
